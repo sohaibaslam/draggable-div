@@ -1,0 +1,25 @@
+.input-axis {
+    position: absolute;
+    padding: 10px;
+    width: 100%;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+.input-axis input {
+    margin: 2px;
+    border-radius: 5px;
+    height: 40px;
+    width: 100px;
+    font-size: large;
+    border-color: #191a51;
+}
+
+.draggable {
+    border: groove #191a51;
+    border-radius: 10px;
+    width: 120px;
+    height: 120px;
+    background-color: #9418f0;
+}
