@@ -7,10 +7,9 @@ const App: FC = () => {
   const [yPosition, setYPosition] = useState(160);
 
   const handlePositionUpdate = (event: any) => {
-    // Adding 3px to compensate for the mismatch in offset received from mouse event
-    console.log(event)
-    const offSetX = event.offsetX < event.x ? event.offsetX + 3 : 0
-    const offSetY = event.offsetY < event.y ? event.offsetY + 3 : 0
+    // Need to make sure offset is valid
+    const offSetX = event.offsetX < event.x ? event.offsetX: 0
+    const offSetY = event.offsetY < event.y ? event.offsetY: 0
 
     setXPosition(event.x - offSetX)
     setYPosition(event.y - offSetY)
